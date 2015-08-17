@@ -1,15 +1,8 @@
-
-local buttonImage	= love.graphics.newImage('assets/bow.png')
-local width			= 64
-local height		= 32
-
-function setPosition(newX, newY)
-	self.x = newX
-	self.y = newY
-end
-
-function isPressed(mouseX, mouseY)
-	if self.x <= mouseX and mouseX <= self.x + self.width then
-		print("Continue")
-	end
-end
+return {
+	name			= 'continue',
+	image			= love.graphics.newImage('assets/bow.png'),
+	width			= 64,
+	height			= 32,
+	x				= love.graphics:getWidth()/2 - 64/2,
+	y				= love.graphics:getHeight()/2 - 32/2
+}

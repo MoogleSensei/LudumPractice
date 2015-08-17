@@ -1,7 +1,7 @@
 local MenuState		= class({})
 
--- continueButton		= require('continueButton')
--- quitButton			= require('quitButton')
+continueButton		= require('continueButton')
+quitButton			= require('quitButton')
 
 arrayButtons		= {continueButton, quitButton}
 
@@ -20,6 +20,9 @@ end
 function MenuState:draw()
 	love.graphics.setColor(255,255,255)
 	love.graphics.print('Menu State',20,20)
+	for i,button in ipairs(arrayButtons) do
+		love.graphics.draw(button.image,button.x,button.y)
+	end
 end
 
 function MenuState:exitMenu()
@@ -28,14 +31,20 @@ end
 
 function MenuState:keyreleased(key)
 	if key == 'escape'	then self:exitMenu() end
-	if key == ' '		then self:exitMenu() end
 end
 
 function MenuState:mousereleased(x, y, mouseButton)
-	if mouseButton == "l" then
-		-- for button in arrayButtons do
-		-- 	print("A button")
-		-- end
+	if mouseButton == 'l' then
+		for i,button in ipairs(arrayButtons) do
+			if (button.x <= x and x <= button.x + button.width) and (button.y <= y and y <= button.y + button.height) then
+				if button.name == 'quit' then
+					love.event.quit()
+				end
+				if button.name == 'continue' then
+					self:exitMenu()
+				end
+			end
+		end
 	end
 end
 

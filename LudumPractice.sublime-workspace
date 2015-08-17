@@ -31,7 +31,7 @@
 			"file": "states/menuState.lua",
 			"settings":
 			{
-				"buffer_size": 736,
+				"buffer_size": 734,
 				"line_ending": "Windows"
 			}
 		},
@@ -39,7 +39,7 @@
 			"file": "continueButton.lua",
 			"settings":
 			{
-				"buffer_size": 292,
+				"buffer_size": 100,
 				"line_ending": "Windows"
 			}
 		},
@@ -55,7 +55,7 @@
 			"file": "/G/Coding/Games/whatLurksInDarkness/main.lua",
 			"settings":
 			{
-				"buffer_size": 26622,
+				"buffer_size": 0,
 				"line_ending": "Windows"
 			}
 		}
@@ -132,7 +132,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -147,8 +147,8 @@
 						"selection":
 						[
 							[
-								296,
-								296
+								544,
+								544
 							]
 						],
 						"settings":
@@ -196,20 +196,21 @@
 					"file": "states/menuState.lua",
 					"settings":
 					{
-						"buffer_size": 736,
+						"buffer_size": 734,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								117,
-								117
+								116,
+								116
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Lua/Lua.tmLanguage"
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -222,15 +223,15 @@
 					"file": "continueButton.lua",
 					"settings":
 					{
-						"buffer_size": 292,
+						"buffer_size": 100,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								55,
-								55
+								93,
+								93
 							]
 						],
 						"settings":
@@ -274,15 +275,15 @@
 					"file": "/G/Coding/Games/whatLurksInDarkness/main.lua",
 					"settings":
 					{
-						"buffer_size": 26622,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2103,
-								2103
+								0,
+								0
 							]
 						],
 						"settings":
